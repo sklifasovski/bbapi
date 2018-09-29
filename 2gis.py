@@ -3,9 +3,10 @@
 # vim:fileencoding=utf-8
 import requests
 import pprint
+import codecs
 from urllib import parse
 
-question = input("Запрос: ")
+question = "Запрос"
 city_number = input("Номер города: ")
 req_data_1 = {'region_id': city_number }
 req_data_2 = {'type':'street,adm_div.city,crossroad,adm_div.settlement,station,building,adm_div.district,road,adm_div.division,adm_div.region,adm_div.living_area,attraction,adm_div.place,adm_div.district_area,branch,parking,gate,route,foreign_city'}             
