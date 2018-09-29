@@ -6,7 +6,7 @@ import pprint
 import codecs
 from urllib import parse
 
-question = "Запрос"
+question = "Ночные клубы"
 city_number = input("Номер города: ")
 req_data_1 = {'region_id': city_number }
 req_data_2 = {'type':'street,adm_div.city,crossroad,adm_div.settlement,station,building,adm_div.district,road,adm_div.division,adm_div.region,adm_div.living_area,attraction,adm_div.place,adm_div.district_area,branch,parking,gate,route,foreign_city'}             
@@ -22,4 +22,4 @@ req_data_10 = {'key': 'ruoedw9225'}
 url = 'https://catalog.api.2gis.ru/3.0/items?' + parse.urlencode(req_data_1) + '&' + parse.urlencode(req_data_2) + '&' + parse.urlencode(req_data_3) + '&' + parse.urlencode(req_data_4) + '&' + parse.urlencode(req_data_5) + '&' + parse.urlencode(req_data_6) + '&' + parse.urlencode(req_data_7) + '&' + parse.urlencode(req_data_8) + '&' + parse.urlencode(req_data_9) + '&' + parse.urlencode(req_data_10)
 
 resp = requests.get(url)
-pprint.pprint(resp.json()['result']['items'][1])
+pprint.pprint(resp.json()['result']['items'])
