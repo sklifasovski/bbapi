@@ -7,7 +7,7 @@ import codecs
 from urllib import parse
 
 question = "Ночные клубы"
-city_number = input("Номер города: ")
+city_number = input("№: ")
 req_data_1 = {'region_id': city_number }
 req_data_2 = {'type':'street,adm_div.city,crossroad,adm_div.settlement,station,building,adm_div.district,road,adm_div.division,adm_div.region,adm_div.living_area,attraction,adm_div.place,adm_div.district_area,branch,parking,gate,route,foreign_city'}             
 req_data_3 = {'page': '1'}
