@@ -3,8 +3,8 @@ import requests
 import pprint
 from urllib import parse
 
-question = input("Question: ")
-city_number = input("Number city: ")
+question = input("Question: ".encode('utf-8'))
+city_number = input("Number city: ".encode('utf-8'))
 req_data_1 = {'region_id': city_number }
 req_data_2 = {'type':'street,adm_div.city,crossroad,adm_div.settlement,station,building,adm_div.district,road,adm_div.division,adm_div.region,adm_div.living_area,attraction,adm_div.place,adm_div.district_area,branch,parking,gate,route,foreign_city'}             
 req_data_3 = {'page': '1'}
